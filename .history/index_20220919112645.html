@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a){
+                let dice = 0
+                dice = a / 12
+                if(dice <= 0) dice = 0 
+                if(0 < dice < 1) dice = 1
+
+                let answer = dice
+                dice % 12 ? answer + 1 : answer
+                
+                return answer
+            }
+            
+            console.log(solution(24));
+        </script>
+    </body>
+</html>

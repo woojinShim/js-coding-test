@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                const new_arr = arr.filter((item) => {
+                    return item % 2 != 0
+                })
+                const sum_arr = new_arr.map((item) => {
+                    return item += item
+                })
+                console.log(sum_arr)
+            }
+            let arr = [12,77,38,41,53,92,85]
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a){
+                let dice, answer
+
+                dice = a / 12
+                
+                if(dice <= 0) dice = 0 
+                if(0 < dice < 1) answer = 1
+                
+                dice.toFixed(1)
+ 
+                return answer + dice
+            }
+            
+            console.log(solution(1));
+        </script>
+    </body>
+</html>

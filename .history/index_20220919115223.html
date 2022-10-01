@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a){
+                let dice
+
+                dice = a / 12
+                Math.ceil(dice)
+                
+                if(dice <= 0) dice = 0 
+
+                return dice
+            }
+            
+            console.log(solution(9));
+        </script>
+    </body>
+</html>
