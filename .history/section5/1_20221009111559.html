@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n, arr1, n2, arr2){
+                let answer;
+                let sum = [...new Set([...arr1, ...arr2])]
+                answer = sum.sort()
+                return answer;
+            }
+            
+            let arr=[1,3,5];
+            let arr2=[2,3,6,7,9]
+            console.log(solution(3, arr, 5, arr2));
+        </script>
+    </body>
+</html>
